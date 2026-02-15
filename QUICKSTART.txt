@@ -1,0 +1,102 @@
+================================================================
+   QUICK START - MOBILE APP
+================================================================
+
+🚀 **Test on Desktop (Fastest)**
+
+1. Install Kivy:
+   pip install kivy Pillow requests
+
+2. Run:
+   python main.py
+
+3. Test all features
+
+================================================================
+
+📱 **Build Android APK**
+
+1. Install buildozer:
+   pip install buildozer cython
+
+2. Build (first time takes 30-60 min):
+   buildozer android debug
+
+3. Find APK:
+   bin/CircleMapGenerator-2.0-debug.apk
+
+4. Install on phone:
+   - Copy APK to phone
+   - Tap to install
+   - Enable "Unknown Sources" if asked
+
+================================================================
+
+📖 **Using the App**
+
+1. Search or enter location coordinates
+2. Set radius and unit (meters/km/miles)
+3. Choose colors and opacity
+4. Tap "Add Circle"
+5. Repeat for more circles
+6. Tap "Generate & Save KMZ"
+7. Upload KMZ to https://www.google.com/mymaps
+
+================================================================
+
+🆘 **Need Help?**
+
+- Desktop testing issues: Check Python and Kivy installation
+- Android build issues: See BUILD_INSTRUCTIONS.txt
+- App usage: See README_MOBILE.txt
+- Buildozer problems: Check disk space and internet
+
+================================================================
+
+✨ **Key Differences from Desktop Version**
+
+Desktop (Windows):
+- Tkinter GUI
+- Run with: python circle_map_gui.py
+- No build needed
+- Windows only
+
+Mobile (Android/iOS):
+- Kivy GUI
+- Run with: python main.py (testing)
+- Build APK/IPA for deployment
+- Touch interface
+- Cross-platform
+
+================================================================
+
+📦 **Files in This Folder**
+
+main.py              - Mobile app (Kivy UI)
+map_circle_tool.py   - Core logic (shared with desktop)
+buildozer.spec       - Android build configuration
+requirements.txt     - Python dependencies
+README_MOBILE.txt    - Complete documentation
+BUILD_INSTRUCTIONS.txt - Detailed build guide
+
+================================================================
+
+🎯 **Recommended Workflow**
+
+1. Test on desktop first (fast iteration)
+2. Fix any bugs
+3. Build Android APK once satisfied
+4. Test on real Android device
+5. Iterate as needed
+6. Build release version
+7. Distribute!
+
+================================================================
+
+Version: 2.0
+Status: Ready to build
+Platforms: Android (primary), iOS (with macOS)
+
+Happy mobile mapping! 📱🗺️
+
+================================================================

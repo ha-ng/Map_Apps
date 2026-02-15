@@ -1,0 +1,43 @@
+# Circle Map Generator - Mobile Edition
+# =======================================
+
+# Core Framework (Required)
+kivy==2.2.1
+Pillow>=9.0.0
+requests>=2.27.0
+
+# Optional - Enhanced UI
+kivymd==1.1.1
+
+# Optional - Map Preview
+# Install after kivy using: garden install mapview
+# Or: pip install kivy-garden.mapview
+
+# ==================================================
+# Installation for Desktop Testing
+# ==================================================
+# pip install -r requirements.txt
+# garden install mapview  # optional
+# python main.py
+
+# ==================================================
+# Building Android APK
+# ==================================================
+# Install buildozer:
+#   pip install buildozer cython
+#
+# Build APK:
+#   buildozer android debug
+#
+# Deploy to device:
+#   buildozer android deploy run
+#
+# Create release APK:
+#   buildozer android release
+
+# ==================================================
+# Platform Support
+# ==================================================
+# Android: API 21+ (Android 5.0 Lollipop or higher)
+# iOS: iOS 11.0+ (requires macOS with Xcode)
+# Desktop: Windows, macOS, Linux (for development/testing)

@@ -50,6 +50,9 @@ jobs:
           libtool-bin \
           pkg-config
 
+    - name: Install build dependencies
+      run: sudo apt-get update && sudo apt-get install -y autoconf automake libtool
+
     - name: Install buildozer and Cython
       run: |
         pip3 install --upgrade pip

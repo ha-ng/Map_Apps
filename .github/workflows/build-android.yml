@@ -74,7 +74,7 @@ jobs:
         echo "apk_name=$(basename $APK_FILE)" >> $GITHUB_OUTPUT
 
     - name: Upload APK artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: CircleMapGenerator-Android
         path: ${{ steps.apk_name.outputs.apk_path }}

@@ -45,7 +45,9 @@ jobs:
           unzip \
           openjdk-17-jdk \
           autoconf \
+          automake \
           libtool \
+          libtool-bin \
           pkg-config
 
     - name: Install buildozer and Cython
